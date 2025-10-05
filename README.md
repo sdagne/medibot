@@ -274,7 +274,7 @@ medibot/
  - Query complexity analysis
 
 ## 🚨 Medical Disclaimer
-### ⚠️ Important: MediChat Pro is designed for educational and informational purposes only. It should not be used as a substitute for professional medical advice, diagnosis, or treatment. Always consult with qualified healthcare professionals for medical concerns.
+### ⚠️ Important: Medibot is designed for educational purposes only. It should not be used as a substitute for professional medical advice, diagnosis, or treatment. Always consult with qualified healthcare professionals for medical concerns.
  
 
  ## 🛠️ Technical Stack
