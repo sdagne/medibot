@@ -1,4 +1,4 @@
-# Project Name ?? MediChat Pro - Medical Document Intelligence Assistant
+# Project Name:  Medibot - Medical Document Intelligence Assistant
 
 ## 📖 Overview
 MediChat Pro is an intelligent medical document analysis system that combines AI-powered chat capabilities with secure document storage and email reporting. 
@@ -24,22 +24,26 @@ The application allows healthcare professionals to upload medical documents, ask
 
 ## 🏗️ Architecture & Workflow
 
+```text
+          │
 User Interface (Streamlit)
-        ?
+          ⬇️
 Document Upload & Processing
-        ?
+          ⬇️
 S3 Storage + ChromaDB Vector Storage
-        ?
+          ⬇️
 AI Chat Interface (Self-hosted LLM)
-        ?
+          ⬇️
 Medical Insights & Analytics
-        ?
+          ⬇️
 Email Reports & Support Tickets
+```
+
 
 ## 📁 Project Structure
 
 ```
-medipro/
+medibot/
 ├── app/
 │   ├── __init__.py
 │   ├── chat_utils.py          # AI chat functionality
