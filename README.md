@@ -39,7 +39,7 @@ Email Reports & Support Tickets
 
 ## 📁 Project Structure
 
-medipro/
+medibot/
 ├── app/
 │   ├── __init__.py
 │   ├── chat_utils.py          # AI chat functionality
@@ -52,6 +52,23 @@ medipro/
 ├── main.py                    # Main Streamlit application
 └── requirements.txt           # Python dependencies
 
+
+## 📁 Project Structure
+
+```
+medipro/
+├── app/
+│   ├── __init__.py
+│   ├── chat_utils.py          # AI chat functionality
+│   ├── config.py              # Configuration & environment variables
+│   ├── email_utils.py         # Email & reporting system
+│   ├── pdf_utils.py           # PDF text extraction
+│   ├── s3_utils.py            # AWS S3 document storage
+│   ├── ui.py                  # Streamlit UI components
+│   └── vectorstore_utils.py   # ChromaDB vector storage
+├── main.py                    # Main Streamlit application
+└── requirements.txt           # Python dependencies
+```
 
 ## 🔧 Core Components
 
