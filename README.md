@@ -55,7 +55,7 @@ medipro/
 
 ## 🔧 Core Components
 
-1. Chat System (chat_utils.py)
+### 1. Chat System (chat_utils.py)
  - Self-hosted LLM integration with OpenAI-compatible API
 
  - Medical terminology detection and analysis
@@ -64,7 +64,7 @@ medipro/
 
  - Configurable temperature and model settings
 
-2. Document Processing (pdf_utils.py + s3_utils.py)
+### 2. Document Processing (pdf_utils.py + s3_utils.py)
  - PDF text extraction with cleaning and normalization
 
  - AWS S3 integration for secure document storage
@@ -73,7 +73,7 @@ medipro/
 
  - Batch processing for multiple documents
 
-3. Vector Storage (vectorstore_utils.py)
+### 3. Vector Storage (vectorstore_utils.py)
  - ChromaDB cloud integration for semantic search
 
  - Self-hosted embedding models for text vectorization
@@ -82,7 +82,7 @@ medipro/
 
  - Relevance-based document retrieval
 
- 4. Email & Reporting (email_utils.py)
+ ### 4. Email & Reporting (email_utils.py)
  - Comprehensive medical analytics reports
  
  - Support ticket generation system
@@ -91,7 +91,7 @@ medipro/
 
  - SMTP integration with configurable providers
 
-5. Configuration (config.py)
+### 5. Configuration (config.py)
  - Centralized environment variable management
 
  - Model configuration for both chat and embeddings
@@ -111,13 +111,13 @@ medipro/
 
  - SMTP email service
 
- 1. Clone and Install Dependencies
+ ### 1. Clone and Install Dependencies
 
     > git clone <repository-url>
     > cd medipro
     > pip install -r requirements.txt
 
-2. Environment Configuration
+### 2. Environment Configuration
 
 ### Create a .env file with the following variables:
 # Self-hosted Model Configuration
