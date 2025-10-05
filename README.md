@@ -121,39 +121,46 @@ medipro/
 
 ### Create a .env file with the following variables:
 # Self-hosted Model Configuration
+```
 OPENAI_API_BASE=http://your-llm-api-endpoint/v1
 OPENAI_API_KEY=your-api-key-or-not-needed
 OPENAI_EMBEDDING_BASE=http://your-embedding-api-endpoint/v1
 OPENAI_EMBEDDING_KEY=your-embedding-key
 LLM_MODEL=your-llm-model-name
 EMBEDDING_MODEL=your-embedding-model
-
+```
 # ChromaDB Configuration
+```
 CHROMA_API_KEY=your-chroma-api-key
 CHROMA_TENANT=your-tenant
 CHROMA_DATABASE=medibot
 CHROMA_COLLECTION=medical_documents
+```
 
 # AWS S3 Configuration
+```
 S3_ACCESS_KEY=your-aws-access-key
 S3_SECRET_KEY=your-aws-secret-key
 S3_BUCKET_NAME=your-bucket-name
 S3_REGION=ap-south-1
+```
 
 # Email Configuration
+```
 EMAIL_SMTP_SERVER=smtp.gmail.com
 EMAIL_SMTP_PORT=587
 EMAIL_SENDER=your-email@gmail.com
 EMAIL_PASSWORD=your-app-password
 EMAIL_RECEIVER=default-receiver@example.com
+```
 
-3. Run the Application
+### 3. Run the Application
 
     > streamlit run main.
 
 ## 💻 Usage Guide
 
-1. Document Upload
+### 1. Document Upload
  - Use the sidebar to upload PDF medical documents
 
  - Documents are automatically processed and stored in S3
@@ -161,21 +168,21 @@ EMAIL_RECEIVER=default-receiver@example.com
  - Text is extracted, cleaned, and indexed in ChromaDB
 
 
- 2. Chat Interface
+ ### 2. Chat Interface
  - Ask questions about your medical documents
 
  - The AI searches through all uploaded documents
 
  - Responses include medical insights and relevant context
 
-3. Email Features
+### 3. Email Features
  - Configure recipient email in the sidebar
 
  - Send analysis reports with chat history and document insights
 
  - Generate support tickets for assistance
 
-4. Session Management
+### 4. Session Management
  - Save current session state
 
  - View analytics on documents processed and messages exchanged
@@ -188,37 +195,37 @@ EMAIL_RECEIVER=default-receiver@example.com
 
 
 ## Document Processing Flow
-1 - Upload: User uploads PDF files through Streamlit interface
+### 1 - Upload: User uploads PDF files through Streamlit interface
 
-2 - Extraction: Text is extracted and cleaned from PDFs
+### 2 - Extraction: Text is extracted and cleaned from PDFs
 
-3 - Storage: Documents are stored in AWS S3 with unique keys
+### 3 - Storage: Documents are stored in AWS S3 with unique keys
 
-4 - Vectorization: Text is split into chunks and embedded
+### 4 - Vectorization: Text is split into chunks and embedded
 
-5 - Indexing: Embeddings are stored in ChromaDB for search
+### 5 - Indexing: Embeddings are stored in ChromaDB for search
 
 ## Chat Interaction Flow
 
-1 - Query: User asks a medical question
+### 1 - Query: User asks a medical question
 
-2 - Retrieval: Relevant document chunks are found using semantic search
+### 2 - Retrieval: Relevant document chunks are found using semantic search
 
-3 - Context: Retrieved documents are formatted as context
+### 3 - Context: Retrieved documents are formatted as context
  
-4 - Generation: LLM generates response based on context
+### 4 - Generation: LLM generates response based on context
 
-5 - Enhancement: Response is enhanced with medical insights
+### 5 - Enhancement: Response is enhanced with medical insights
 
 ## Email Reporting Flow
 
-1 - Trigger: User requests email report or support ticket
+### 1 - Trigger: User requests email report or support ticket
 
-2 - Analytics: Session data and document insights are compiled
+### 2 - Analytics: Session data and document insights are compiled
 
-3 - Formatting: HTML and plain text email content is generated
+### 3 - Formatting: HTML and plain text email content is generated
 
-4 - Delivery: Email is sent via configured SMTP server
+### 4 - Delivery: Email is sent via configured SMTP server
 
 ## 🎯 Command Features
 
@@ -293,13 +300,13 @@ For technical support or questions:
  ## 🔄 Development
 ## Adding New Features
 
- 1 - Follow the modular architecture pattern
+ ### 1 - Follow the modular architecture pattern
 
- 2 - Add configuration in config.py
+ ### 2 - Add configuration in config.py
 
- 3 - Implement utilities in appropriate module files
+ ### 3 - Implement utilities in appropriate module files
 
- 4 - Update main application logic in main.py
+ ### 4 - Update main application logic in main.py
 
 ## Testing
 
